@@ -74,7 +74,7 @@
     }
   };
 
-  $(document).on('ajax:aborted:file', 'form', function(){
+  $(document).on('ajax:aborted:file', '[id=remote_file_uploader][data-remote=true]', function(){
     var form = $('[id=remote_file_uploader][data-remote=true]');
 
     remotipart.setup(form);
