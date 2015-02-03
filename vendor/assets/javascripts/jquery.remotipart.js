@@ -75,7 +75,7 @@
   };
 
   $(document).on('ajax:aborted:file', 'form', function(){
-    var form = $(this);
+    var form = $('[id=remote_file_uploader][data-remote=true]');
 
     remotipart.setup(form);
 
